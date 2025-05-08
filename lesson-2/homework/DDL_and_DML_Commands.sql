@@ -62,16 +62,6 @@ Used to completely delete a table (or other database object).
 
 Example:
 DROP TABLE Employees;
-
-Summary:
-Feature					        DELETE				    TRUNCATE					        DROP
-Removes data			      ✅ Specific rows	✅ All rows					      ✅ Entire table
-Supports WHERE		      ✅ Yes				    ❌ No						        ❌ No
-Rollback possible	      ✅ Yes				    ⚠️ Only in transactions		⚠️ In transactions only
-Logs each row			      ✅ Fully logged	❌ Minimally logged			  ❌ No logging
-Keeps table structure	  ✅ Yes				    ✅ Yes						        ❌ No
-Resets identity column	❌ No				      ✅ Yes						        ❌ Not applicable
-Speed					          ❌ Slower			    ✅ Faster					      ✅ Fastest (removes all)
 */
 
 -- 6. Modify the Name column in the Employees table to VARCHAR(100).
