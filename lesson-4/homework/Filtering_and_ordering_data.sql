@@ -17,8 +17,6 @@ SELECT TOP 5 *
 FROM Employees;
 
 -- 2. Use SELECT DISTINCT to select unique Category values from the Products table.
-SELECT *
-FROM Products;
 
 SELECT DISTINCT Category FROM Products;
 
